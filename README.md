@@ -14,3 +14,4 @@
 2. Дубовицкий Владимир.
 
 ###### Ссылка на GitHub Pages:
+https://loshidze.github.io/Practicum/
