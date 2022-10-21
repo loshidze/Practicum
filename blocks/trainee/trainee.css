@@ -1,0 +1,29 @@
+.trainee {
+  display: grid;
+  grid-template-columns: fit-content(460px) minmax(284px, 580px);
+  grid-template-rows: repeat(3, min-content);
+  grid-template-areas:
+    "title img"
+    "texts img"
+    "links img";
+  box-sizing: border-box;
+  padding: 210px 120px 120px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1000px) {
+  .trainee {
+    padding: 80px 18px 60px;
+    grid-template-columns: fit-content(350px) minmax(284px, 580px);
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .trainee {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+  }
+}

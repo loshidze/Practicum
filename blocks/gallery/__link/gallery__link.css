@@ -1,0 +1,13 @@
+.gallery__link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #222222;
+  opacity: 0.7;
+  transition: .25s;
+}
+
+.gallery__link:hover {
+  opacity: .7;
+}

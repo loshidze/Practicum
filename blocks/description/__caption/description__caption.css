@@ -1,0 +1,14 @@
+.description__caption {
+  /* display: flex;
+  max-width: 400px;
+  margin: 167px 0 0; */
+  display: flex;
+  max-width: 400px;
+  margin: 117px 0 0;
+}
+
+@media screen and (max-width: 615px) {
+  .description__caption {
+    display: none;
+  }
+}

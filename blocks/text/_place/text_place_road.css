@@ -1,0 +1,10 @@
+.text_place_road {
+  grid-area: texts;
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 840px) {
+  .text_place_road {
+    margin-bottom: 0;
+  }
+}

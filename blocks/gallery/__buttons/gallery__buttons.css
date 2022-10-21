@@ -1,0 +1,11 @@
+.gallery__buttons {
+  display: none;
+}
+
+@media screen and (max-width: 610px) {
+  .gallery__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+}

@@ -1,0 +1,14 @@
+.road__buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  grid-area: button;
+  max-width: 130px;
+}
+
+@media screen and (max-width: 840px) {
+  .road__buttons {
+    justify-self: flex-end;
+    align-self: center;
+  }
+}

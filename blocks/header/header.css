@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+  top: 28px;
+  right: calc(120 / 1440 * 100%);
+  justify-content: flex-end;
+  position: fixed;
+  z-index: 9999;
+  background-color: #F4F4F4;
+}

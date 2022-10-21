@@ -1,0 +1,13 @@
+.gallery__main {
+  margin: 120px 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+@media screen and (max-width: 610px) {
+  .gallery__main {
+    grid-template-columns: 1fr;
+    margin: 35px 0 0;
+  }
+}

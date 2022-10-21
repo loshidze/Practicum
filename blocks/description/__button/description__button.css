@@ -1,0 +1,31 @@
+.description__button {
+  margin:0;
+  display: flex;
+  background: #24B47E;
+  color: #FFFFFF;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+  width: 180px;
+  height: 50px;
+  transition: .25s;
+}
+
+.description__button:hover {
+  opacity: .7;
+}
+
+@media screen and (max-width: 615px) {
+  .description__button {
+    font-size: 13px;
+    line-height: 19px;
+    width: 284px;
+    height: 46px;
+    margin: 0 auto;
+  }
+}

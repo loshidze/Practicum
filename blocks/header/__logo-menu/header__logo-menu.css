@@ -1,0 +1,13 @@
+.header__logo-menu {
+  text-decoration: none;
+  color: #151515;
+  display: none;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 500px) {
+  .header__logo-menu {
+    display: inline-block;
+  }
+}

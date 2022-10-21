@@ -1,0 +1,15 @@
+.gallery__links {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 40px;
+  margin-top: 32px;
+}
+
+@media screen and (max-width: 610px) {
+  .gallery__links {
+    display: none;
+  }
+}

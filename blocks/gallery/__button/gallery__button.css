@@ -1,0 +1,16 @@
+.gallery__button {
+  background-color: #cacaca;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  border: none;
+  margin-top: 20px;
+  padding: 0;
+  transition: opacity .25s;
+  cursor: pointer;
+}
+
+.gallery__button:hover {
+  background-color: #696969;
+  opacity: .7;
+}

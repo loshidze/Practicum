@@ -1,0 +1,41 @@
+.road {
+  box-sizing: border-box;
+  padding: 120px 0 0 calc(120 / 1440 * 100%);
+  display: grid;
+  grid-template-areas:
+    "title ."
+    "texts ."
+    "image images"
+    "button .";
+  grid-template-columns: repeat(2, minmax(284px, 650px));
+  grid-template-rows:  repeat(4, min-content);
+  column-gap: 40px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1050px) {
+  .road {
+    grid-template-columns: repeat(2, minmax(284px, 450px));
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .road {
+    display: grid;
+    grid-template-areas:
+    "title button"
+    "image image"
+    "texts texts";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:  min-content minmax(175px, 400px) min-content;
+    padding: 120px 18px 0;
+    position: relative;
+    row-gap: 40px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .road {
+    grid-template-rows:  min-content fit-content(175px) min-content;
+  }
+}

@@ -1,0 +1,11 @@
+.gallery__select {
+  margin: 40px 0 0;
+  display: none;
+  max-width: 114px;
+}
+
+@media screen and (max-width: 610px) {
+  .gallery__select {
+    display: block;
+  }
+}

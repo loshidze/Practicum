@@ -1,0 +1,16 @@
+.gallery__figure {
+  margin: 0;
+}
+
+
+@media screen and (max-width: 610px) {
+  .gallery__figure:nth-last-of-type(2) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .gallery__figure:nth-last-of-type(3) {
+    display: none;
+  }
+}

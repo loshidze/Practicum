@@ -1,0 +1,46 @@
+.road__item {
+  grid-area: image;
+  padding-bottom: 50px;
+  max-width: 650px;
+}
+
+.road__item:last-of-type {
+  grid-area: images;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 1380px) {
+  .road__item:last-of-type {
+    padding-left: 0;
+  }
+
+  .road__item {
+    max-width: 500px;
+  }
+}
+
+
+@media screen and (max-width: 1050px) {
+  .road__item {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .road__item {
+    max-width: 600px;
+    margin: auto;
+    padding-bottom: 0;
+  }
+
+  .road__item:last-of-type {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .road__item {
+    width: 100%;
+    object-fit: contain;
+  }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Белёвкин Сергей & Владимир Дубовицкий">
+  <meta name="description" content="Контест Яндекс Практикума">
+  <meta name="keywords" content="HTML5, CSS3, Figma, BEM Nested, Git">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Контест</title>
+</head>
+<body class="root">
+  <header class="header">
+    <nav>
+      <ul class="header__links">
+        <li><a class="header__link" href="#coating">Покрытия и градиенты</a></li>
+        <li><a class="header__link" href="#bikes">Велосипеды</a></li>
+        <li><a class="header__link" href="#trainee">Тренировки</a></li>
+      </ul>
+      <a class="header__logo-menu" href="#">&#9776;</a>
+    </nav>
+  </header>
+  <section class="description">
+    <h1 class="description__title">Шоссе, ТТ и&nbsp;Грэвел</h1>
+    <img class="description__image" src="./images/description.jpg" alt="описание">
+    <p class="description__text">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам – нужно только определиться с выбором велосипеда и отправиться в путь.</p>
+    <a class="description__button" href="#">Подробнее</a>
+    <div class="description__caption">
+      <p class="description__caption_text">Cannondale Systemsix</p>
+      <hr class="description__caption_line">
+    </div>
+  </section>
+  <section class="motivation">
+      <img class="motivation__image" src="./images/motivation.jpg" alt="мотивационная">
+      <h2 class="motivation__title">«Катайся много или мало, долго или коротко, как хочешь - но катайся»</h2>
+      <div class="motivation__caption">
+        <h3 class="motivation__caption-autor">Эдди Меркс</h3>
+        <p class="motivation__caption-autor-subline">Велогонщик</p>
+      </div>
+  </section>
+  <section class="road" id="coating">
+    <h2 class="title title_place_road">Шоссе</h2>
+    <div class="road__buttons">
+      <button class="road__button"></button>
+      <button class="road__button"></button>
+    </div>
+    <img src="./images/road__item1.jpg" alt="Участок серпантина" class="road__item">
+    <img src="./images/road__item2.jpg" alt="Участок лесной дороги" class="road__item">
+    <p class="text text_place_road">На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.</p>
+  </section>
+  <section class="gallery" id="bikes">
+    <div class="gallery__header">
+      <h2 class="gallery__title">Велосипеды</h2>
+      <ul class="gallery__links">
+        <li><a class="gallery__link gallery__link_active" href="#">Шоссе</a></li>
+        <li><a class="gallery__link" href="#">Грэвел</a></li>
+        <li><a class="gallery__link" href="#">TT</a></li>
+      </ul>
+    </div>
+    <select class="gallery__select" name="gallery-list" id="gallery-list">
+      <option class="gallery__list" value="">Шоссе</option>
+      <option class="gallery__list" value="">Грэвел</option>
+      <option class="gallery__list" value="">TT</option>
+    </select>
+    <div class="gallery__main">
+      <figure class="gallery__figure">
+        <img class="gallery__image" src="./images/bike_1.jpg" alt="сервело">
+        <figcaption class="gallery__figcaption">
+          <a class="gallery__description" target="_blank" href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN">Cervelo Caledonia-5</a>
+        </figcaption>
+      </figure>
+      <figure class="gallery__figure">
+        <img class="gallery__image" src="./images/bike_2.jpg" alt="канондаль">
+        <figcaption class="gallery__figcaption">
+          <a class="gallery__description" target="_blank" href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J">Cannondale Systemsix Himod</a>
+        </figcaption>
+      </figure>
+      <figure class="gallery__figure">
+        <img class="gallery__image" src="./images/bike_3.jpg" alt="трек">
+        <figcaption class="gallery__figcaption">
+          <a class="gallery__description" target="_blank" href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF">Trek Domane SL-7</a>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="gallery__buttons">
+      <button class="gallery__button gallery__button_active"></button>
+      <button class="gallery__button"></button>
+      <button class="gallery__button"></button>
+    </div>
+  </section>
+  <section class="trainee" id="trainee">
+    <h2 class="title title_place_trainee">Тренировки</h2>
+    <img src="./images/trainee-item.jpg" alt="Загородная дорога" class="trainee__item">
+    <p class="text text_place_trainee">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать эти тренировки поможет приложение Strava, а также это приложение позволит построить тренировочный план.</p>
+    <nav>
+      <ul class="trainee__links">
+        <li><a href="https://www.strava.com"  class="trainee__link" target="_blank">Strava</a></li>  <!--Думаю насчет тэга nav -->
+        <li><a href="https://www.komoot.com"  class="trainee__link" target="_blank">Komoot</a></li>
+      </ul>
+    </nav>
+  </section>
+  <footer class="footer">
+    <form action="#" method="get" class="footer__form">
+      <label for="mail" class="footer__form-label">Подпишитесь на рассылку —</label>  <!--  Валидатор ругается на форму-->
+      <input type="email" id="mail" class="footer__form-input" placeholder="Ваш e-mail">
+    </form>
+    <p class="footer__copyright">&copy; Road Club 2022</p>
+  </footer>
+</body>
+</html>

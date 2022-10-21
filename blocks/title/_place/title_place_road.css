@@ -1,0 +1,21 @@
+.title_place_road {
+  grid-area: title;
+  max-width: 230px;
+}
+
+@media screen and (max-width: 840px) {
+  .title_place_road {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title_place_road::before {
+    content: '';
+    width: calc(100% - 2*18px);
+    border: 1px solid #e3e3e3;
+    position: absolute;
+    top: 40px;
+    margin: auto;
+  }
+}
